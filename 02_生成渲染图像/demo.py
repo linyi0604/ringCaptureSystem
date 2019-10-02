@@ -61,8 +61,8 @@ for n in range(N):
         camera = (camera0, camera1, camera2)
         for i in range(3):
             bpy.data.objects["Camera"].location = camera[i]
-            # 图像命名规范：　路径序号n_控制序号m_相机编号i_sxyz(sx,sy,sz)_vxyz(vx,vy,vz).png
-            file_name = "" + str(n) + "_" + str(m) + "_" + str(i) + "_" + "sxyz" + str(s) + "_vxyz" + str(v)
+            # 图像命名规范：　路径序号n_控制序号m_相机编号i.png
+            file_name = "" + str(n) + "_" + str(m) + "_" + str(i)
             # 下一张图像的路径
             bpy.context.scene.render.filepath = cur_file_path + file_name
 
